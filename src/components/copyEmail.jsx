@@ -15,7 +15,7 @@ const CopyEmail = () => {
 
   return (
     <div className="relative inline-block">
-      <span className="text-secondary hover:text-primary transition duration-300 flex text-lg gap-2 cursor-pointer"
+      <span className="text-secondary hover:text-primary transition duration-300 flex text-lg gap-2 cursor-pointer no-underline"
         onClick={handleCopy}>alexandro71000@gmail.com<i className="fa-regular fa-copy text-xl"></i>
       </span>
       <div className={`absolute top-[30px] left-0 bg-bgsecondary text-tertiary text-sm py-1 px-2 rounded shadow transition-opacity duration-300 
