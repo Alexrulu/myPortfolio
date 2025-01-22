@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#myProyects, #aboutMe, #mySkills {
+  scroll-margin-top: 100px; /* Ajusta el valor según el margen que necesites */
+}
