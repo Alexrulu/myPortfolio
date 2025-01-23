@@ -8,11 +8,11 @@ const Click = () => {
   };
 
   const getClassNames = (section) => {
-    return `text-lg hidden lg:flex items-center py-2 transition duration-300 ${activeSection === section ? 'text-primary' : 'text-secondary'}`;
+    return `text-lg hidden lg:flex items-center py-2 transition duration-300 ${activeSection === section ? 'dark:text-primary-dark text-primary-light' : 'dark:text-secondary-dark text-secondary-light'}`;
   };
 
   const getClassNamesSpan = (section) => {
-    return `block h-[1px] bg-secondary mr-3 transition-width duration-300 ${activeSection === section ? 'w-16' : 'w-10'}`;
+    return `block h-[1px] dark:bg-secondary-dark bg-secondary-light mr-3 transition-width duration-300 ${activeSection === section ? 'w-16' : 'w-10'}`;
   }
 
   return (

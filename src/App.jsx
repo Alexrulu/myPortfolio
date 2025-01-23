@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Click from "./components/handleClick";
 import CopyEmail from "./components/copyEmail";
+import ThemeSwitcher from "./components/themeSwitcher";
 
 function App() {
   // Función para actualizar las coordenadas del mouse
@@ -35,72 +36,76 @@ function App() {
   return (
     <>
       
-      <div className="font-Poppins p-5 bg-dynamic-light flex flex-col gap-20 sm:px-20 md:px-40 lg:p-20 lg:flex-row lg:gap-0 xl:px-40 2xl:px-56 3xl:px-80">
+      <div className="font-Poppins p-5 dark:bg-dynamic-light-dark bg-dynamic-light-light flex flex-col gap-20 sm:px-20 md:px-40 lg:p-20 lg:flex-row lg:gap-0 xl:px-40 2xl:px-56 3xl:px-80">
         {/* me */}
         <div className="flex flex-col gap-3 lg:fixed lg:w-1/4">
-          <p className="text-primary text-5xl">Alexandro Lucero</p>
-          <h1 className="text-primary text-xl">Front End Developer</h1>
-          <p className="text-secondary text-lg">Diseño responsive, pixel-perfect, atención al detalle.</p>
+          
+          <ThemeSwitcher customClass="block lg:hidden ml-auto" />
+          <p className="dark:text-primary-dark text-primary-light text-5xl">Alexandro Lucero</p>
+          <h1 className="dark:text-primary-dark text-primary-light text-xl">Front End Developer</h1>
+          <p className="dark:text-secondary-dark text-secondary-light text-lg">Diseño responsive, pixel-perfect, atención al detalle.</p>
           {/* contact */}
           <div className="flex gap-3 text-2xl items-center flex-wrap md:text-3xl lg:mb-10">
-            <a href="https://github.com/Alexrulu" target="_blank"><i className="fa-brands fa-github text-secondary hover:text-primary transition duration-300"></i></a>
-            <a href="https://www.linkedin.com/in/alexandro-lucero-16602b2a4/" target="_blank"><i className="fa-brands fa-linkedin text-secondary hover:text-primary transition duration-300"></i></a>
-            <a href="https://www.instagram.com/alexrulu/" target="_blank"><i className="fa-brands fa-instagram text-secondary hover:text-primary transition duration-300"></i></a>
+            <a href="https://github.com/Alexrulu" target="_blank"><i className="fa-brands fa-github dark:text-secondary-dark text-secondary-light hover:dark:text-primary-dark hover:text-primary-light transition duration-300"></i></a>
+            <a href="https://www.linkedin.com/in/alexandro-lucero-16602b2a4/" target="_blank"><i className="fa-brands fa-linkedin dark:text-secondary-dark text-secondary-light hover:dark:text-primary-dark hover:text-primary-light transition duration-300"></i></a>
+            <a href="https://www.instagram.com/alexrulu/" target="_blank"><i className="fa-brands fa-instagram dark:text-secondary-dark text-secondary-light hover:dark:text-primary-dark hover:text-primary-light transition duration-300"></i></a>
             <CopyEmail />
           </div>
           <Click />
+          
         </div>
 
         <div className="flex flex-col gap-20 lg:w-3/5 lg:ml-auto lg:gap-40 xl ">
 
           {/* my proyects */}
-          <div className="flex flex-col gap-3" id="myProyects">
-            <p className="text-primary text-lg">MIS PROYECTOS</p>
+          <div className="flex flex-col relative gap-3" id="myProyects">
+            <p className="dark:text-primary-dark text-primary-light text-lg">MIS PROYECTOS</p>
+            <ThemeSwitcher customClass="hidden lg:block absolute top-4 right-4" />
             <div className="flex flex-col gap-6">
-              <p className="text-secondary">Noviembre 2024 (2 meses)</p>
+              <p className="dark:text-secondary-dark text-secondary-light">Noviembre 2024 (2 meses)</p>
               <a href="https://alexandrolucerokeytodreamsb2-production.up.railway.app/" target="_blank">
-                <img src="/images/keytodream.png" alt="keytodream" className="rounded-xl lg:opacity-50 hover:opacity-100 transition duration-300 shadow-custom" />
+                <img src="/images/keytodream.png" alt="keytodream" className="rounded-xl lg:opacity-50 hover:opacity-100 transition duration-300 dark:shadow-custom-dark shadow-custom-light" />
               </a>
               <div className="flex flex-wrap gap-3 items-center">
-                <span className="text-tertiary bg-bgsecondary py-1 px-2 rounded-xl shadow-custom">HTML</span>
-                <span className="text-tertiary bg-bgsecondary py-1 px-2 rounded-xl shadow-custom">CSS</span>
-                <span className="text-tertiary bg-bgsecondary py-1 px-2 rounded-xl shadow-custom">JavaScript</span>
-                <span className="text-tertiary bg-bgsecondary py-1 px-2 rounded-xl shadow-custom">Expressjs</span>
-                <a href="https://github.com/Alexrulu/alexandroLucero_KeyToDreamSB2" target="_blank" className="no-underline text-secondary hover:text-primary transition duration-300 text-lg"><i className="fa-brands fa-github"></i> Repositorio</a>
+                <span className="dark:text-tertiary-dark text-tertiary-light dark:bg-bgsecondary-dark bg-bgsecondary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">HTML</span>
+                <span className="dark:text-tertiary-dark text-tertiary-light dark:bg-bgsecondary-dark bg-bgsecondary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">CSS</span>
+                <span className="dark:text-tertiary-dark text-tertiary-light dark:bg-bgsecondary-dark bg-bgsecondary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">JavaScript</span>
+                <span className="dark:text-tertiary-dark text-tertiary-light dark:bg-bgsecondary-dark bg-bgsecondary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">Expressjs</span>
+                <a href="https://github.com/Alexrulu/alexandroLucero_KeyToDreamSB2" target="_blank" className="no-underline dark:text-secondary-dark text-secondary-light hover:dark:text-primary-dark hover:text-primary-light transition duration-300 text-lg"><i className="fa-brands fa-github"></i> Repositorio</a>
               </div>
-              <p className="text-secondary text-lg">
+              <p className="dark:text-secondary-dark text-secondary-light text-lg">
                 KEY TO DREAM, es un proyecto ficticio para el curso de fullstack, la web tiene un diseño minimalista,   animaciones, y además le realicé el backend (login, register, publicar propiedades, favoritos, etc) es   completamente funcional.</p>
             </div>
           </div>
         
           {/* about */}
           <div className="flex flex-col gap-5" id="aboutMe">
-            <p className="text-primary text-xl">SOBRE MI</p>
-            <p className="text-secondary text-lg">
+            <p className="dark:text-primary-dark text-primary-light text-xl">SOBRE MI</p>
+            <p className="dark:text-secondary-dark text-secondary-light text-lg">
               Me encuentro cursando el segundo año de la Tecnicatura en Programación en la Universidad Nacional de   General Sarmiento (Actualmente en vacaciones) y finalizando un curso sincrónico de Full Stack Developer en FORMAR.
             </p>
-            <p className="text-secondary text-lg">
+            <p className="dark:text-secondary-dark text-secondary-light text-lg">
               Cuento con un gran entusiasmo por contribuir con mis conocimientos y habilidades, al mismo tiempo que   estoy abierto a seguir aprendiendo y creciendo. Estoy seguro de que juntos podemos lograr excelentes resultados.
             </p>
           </div>
 
           {/* my skills */}
           <div className="flex flex-col gap-5" id="mySkills">
-            <p className="text-primary text-xl">MIS HABILIDADES</p>
+            <p className="dark:text-primary-dark text-primary-light text-xl">MIS HABILIDADES</p>
             <div className="flex flex-wrap gap-3">
-              <span className="bg-bgsecondary text-tertiary py-1 px-2 rounded-xl shadow-custom">HTML</span>
-              <span className="bg-bgsecondary text-tertiary py-1 px-2 rounded-xl shadow-custom">CSS</span>
-              <span className="bg-bgsecondary text-tertiary py-1 px-2 rounded-xl shadow-custom">JavaScript</span>
-              <span className="bg-bgsecondary text-tertiary py-1 px-2 rounded-xl shadow-custom">Tailwind</span>
-              <span className="bg-bgsecondary text-tertiary py-1 px-2 rounded-xl shadow-custom">React</span>
-              <span className="bg-bgsecondary text-tertiary py-1 px-2 rounded-xl shadow-custom">Express</span>
-              <span className="bg-bgsecondary text-tertiary py-1 px-2 rounded-xl shadow-custom">Git - Github</span>
-              <span className="bg-bgsecondary text-tertiary py-1 px-2 rounded-xl shadow-custom">Miro</span>
+              <span className="dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">HTML</span>
+              <span className="dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">CSS</span>
+              <span className="dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">JavaScript</span>
+              <span className="dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">Tailwind</span>
+              <span className="dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">React</span>
+              <span className="dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">Express</span>
+              <span className="dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">Git - Github</span>
+              <span className="dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">Miro</span>
             </div>
           </div>
 
           {/* footer */}
-          <p className="text-secondary">Esta web fue echa con React.js, Tailwind Css, y desplegado en Vercel.</p>
+          <p className="dark:text-secondary-dark text-secondary-light">Esta web fue echa con React.js, Tailwind Css, y desplegado en Vercel.</p>
 
         </div>
       </div>

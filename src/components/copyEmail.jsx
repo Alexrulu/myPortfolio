@@ -15,10 +15,10 @@ const CopyEmail = () => {
 
   return (
     <div className="relative inline-block">
-      <span className="text-secondary hover:text-primary transition duration-300 flex text-lg gap-2 cursor-pointer no-underline"
+      <span className="dark:text-secondary-dark text-secondary-light hover:text-primary-light hover:dark:text-primary-dark transition duration-300 flex text-lg gap-2 cursor-pointer no-underline"
         onClick={handleCopy}>alexandro71000@gmail.com<i className="fa-regular fa-copy text-xl"></i>
       </span>
-      <div className={`absolute top-[30px] left-0 bg-bgsecondary text-tertiary text-sm py-1 px-2 rounded shadow transition-opacity duration-300 
+      <div className={`absolute top-[30px] left-0 dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light text-sm py-1 px-2 rounded shadow transition-opacity duration-300 
       ${copied ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}>¡Copiado!
       </div>
