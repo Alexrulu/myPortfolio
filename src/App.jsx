@@ -61,11 +61,12 @@ function App() {
               <a href="https://alexandrolucerokeytodreamsb2-production.up.railway.app/" target="_blank">
                 <img src="/images/keytodream.png" alt="keytodream" className="rounded-xl lg:opacity-50 hover:opacity-100 transition duration-300 shadow-custom" />
               </a>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 items-center">
                 <span className="text-tertiary bg-bgsecondary py-1 px-2 rounded-xl shadow-custom">HTML</span>
                 <span className="text-tertiary bg-bgsecondary py-1 px-2 rounded-xl shadow-custom">CSS</span>
                 <span className="text-tertiary bg-bgsecondary py-1 px-2 rounded-xl shadow-custom">JavaScript</span>
                 <span className="text-tertiary bg-bgsecondary py-1 px-2 rounded-xl shadow-custom">Expressjs</span>
+                <a href="https://github.com/Alexrulu/alexandroLucero_KeyToDreamSB2" target="_blank" className="no-underline text-secondary hover:text-primary transition duration-300 text-lg"><i className="fa-brands fa-github"></i> Repositorio</a>
               </div>
               <p className="text-secondary text-lg">
                 KEY TO DREAM, es un proyecto ficticio para el curso de fullstack, la web tiene un diseño minimalista,   animaciones, y además le realicé el backend (login, register, publicar propiedades, favoritos, etc) es   completamente funcional.</p>
@@ -80,9 +81,6 @@ function App() {
             </p>
             <p className="text-secondary text-lg">
               Cuento con un gran entusiasmo por contribuir con mis conocimientos y habilidades, al mismo tiempo que   estoy abierto a seguir aprendiendo y creciendo. Estoy seguro de que juntos podemos lograr excelentes resultados.
-            </p>
-            <p className="text-secondary text-lg">
-              Estoy interesado en trabajos a medio tiempo (part-time).
             </p>
           </div>
 
@@ -102,7 +100,7 @@ function App() {
           </div>
 
           {/* footer */}
-          <p className="text-secondary">Esta web fue echa con React.js, Tailwind Css, y desplegado con Vercel.</p>
+          <p className="text-secondary">Esta web fue echa con React.js, Tailwind Css, y desplegado en Vercel.</p>
 
         </div>
       </div>
