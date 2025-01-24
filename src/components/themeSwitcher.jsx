@@ -25,8 +25,8 @@ const ThemeSwitcher = ({ customClass }) => {
     <i
       className={`fa-solid text-3xl cursor-pointer ${
         isDarkTheme
-          ? 'fa-moon text-primary-dark [text-shadow:0_0_10px_white]'
-          : 'fa-sun text-secondary-light [text-shadow:0_0_10px_white]'
+          ? 'fa-moon text-primary-dark'
+          : 'fa-sun text-secondary-light'
       } ${customClass}`}
       onClick={handleThemeToggle}
     ></i>
