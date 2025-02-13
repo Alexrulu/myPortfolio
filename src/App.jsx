@@ -101,6 +101,9 @@ function App() {
               <span className="dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">Express</span>
               <span className="dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">Git - Github</span>
               <span className="dark:bg-bgsecondary-dark bg-bgsecondary-light dark:text-tertiary-dark text-tertiary-light py-1 px-2 rounded-xl dark:shadow-custom-dark shadow-custom-light">Miro</span>
+              <span className="py-1 px-2 rounded-xl dark:shadow-custom-dark dark:bg-white/10 dark:text-white/70 bg-black/5 text-black/70 shadow-custom-light">Inglés</span>
+              <span className="py-1 px-2 rounded-xl dark:shadow-custom-dark dark:bg-white/10 dark:text-white/70 bg-black/5 text-black/70 shadow-custom-light">Español</span>
+              
             </div>
           </div>
 
